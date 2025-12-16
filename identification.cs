@@ -30,7 +30,7 @@ class Identification
             Console.WriteLine("1- Client\n");
             Console.WriteLine("2- Profectionnel\n");
             Console.WriteLine("3- sortir\n");
-            Console.Write("Votre choix...");
+            Console.Write("Votre choix...\n");
             choix = Console.ReadLine();
          
             // redirection selon le choix
@@ -39,7 +39,8 @@ class Identification
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Bienvenu dans le profil client\n");
                     Console.ResetColor();
-                    break;
+                    Client.Client_profil();
+                    return;
                    
                 case "2":
                     Console.ForegroundColor = ConsoleColor.Green;
