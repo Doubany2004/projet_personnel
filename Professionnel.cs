@@ -1,29 +1,29 @@
 ﻿using System;
 
-class Client
+ class Professionnel
 {
-    public static void Client_profil()
-    {
+	public static void Professionnel_profil()
+	{
         // declaration des variables
-        string nom_utilisateur = "";
-        string utilisateur_id = "";
+        string nom_professionnel = "";
+        string professionnel_id = "";
         bool idendifiant_valide = false;
         bool mot_de_passe_valide = false;
         string nom = "";
         // declaration du tableau du nom d'utilisateur et mot de passes
-        string[] utilisateur = new string[3] { "pascal", "pascaline", "pauline" };
-        string[] utilisateur_mot_pass = new string[3] { "2004", "2005", "2006" };
+        string[] professionnel = new string[3] {"eveline","mark","luc" };
+        string[] professionnel_mot_pass = new string[3] {"004","005","006" };
 
         while (!idendifiant_valide)
         {
             Console.WriteLine("Quel est votre identifiant?\n");
-            nom_utilisateur = Console.ReadLine();
-            for (int i = 0; i < utilisateur.Length; i++)
+            nom_professionnel = Console.ReadLine();
+            for (int i = 0; i < professionnel.Length; i++)
             {
-                if (nom_utilisateur == utilisateur[i])
+                if (nom_professionnel == professionnel[i])
                 {
                     idendifiant_valide = true;
-                    nom = utilisateur[i];
+                    nom = professionnel[i];
 
 
 
@@ -49,10 +49,10 @@ class Client
         {
             // declaration du  mot de passes
             Console.Write("Quel est votre mot de passe...");
-            utilisateur_id = Console.ReadLine();
-            for (int i = 0; i < utilisateur_mot_pass.Length; i++)
+            professionnel_id = Console.ReadLine();
+            for (int i = 0; i < professionnel_mot_pass.Length; i++)
             {
-                if (utilisateur_mot_pass[i] == utilisateur_id)
+                if (professionnel_mot_pass[i] == professionnel_id)
                 {
 
                     mot_de_passe_valide = true;
@@ -74,8 +74,10 @@ class Client
                 Console.ResetColor();
                 break;
             }
-        }
 
+
+
+
+        }
     }
 }
-

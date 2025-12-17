@@ -44,9 +44,10 @@ class Identification
                    
                 case "2":
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("Bienvenu dans le profil profetionnel\n");
+                    Console.WriteLine("Bienvenu dans le profil professionnel\n");
                     Console.ResetColor();
-                    break;
+                    Professionnel.Professionnel_profil();
+                    return;
 
                 case "3":
                     Console.ForegroundColor = ConsoleColor.Green;
