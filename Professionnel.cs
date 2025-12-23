@@ -2,16 +2,16 @@
 
  class Professionnel
 {
-	public static void Professionnel_profil()
+	public static void Professionnel_profil(string nom)
 	{
         // declaration des variables
         string nom_professionnel = "";
         string professionnel_id = "";
         bool idendifiant_valide = false;
         bool mot_de_passe_valide = false;
-        string nom = "";
+       // string nom = "";
         // declaration du tableau du nom d'utilisateur et mot de passes
-        string[] professionnel = new string[3] {"eveline","mark","luc" };
+        string[] professionnel = new string[3] {"eveline123","mark345","luc678" };
         string[] professionnel_mot_pass = new string[3] {"004","005","006" };
 
         while (!idendifiant_valide)

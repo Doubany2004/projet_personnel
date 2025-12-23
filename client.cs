@@ -2,16 +2,16 @@
 
 class Client
 {
-    public static void Client_profil()
+    public static void Client_profil(string nom)
     {
         // declaration des variables
         string nom_utilisateur = "";
         string utilisateur_id = "";
         bool idendifiant_valide = false;
         bool mot_de_passe_valide = false;
-        string nom = "";
+       // string nom = "";
         // declaration du tableau du nom d'utilisateur et mot de passes
-        string[] utilisateur = new string[3] { "pascal", "pascaline", "pauline" };
+        string[] utilisateur = new string[3] { "pascal123", "pascaline345", "pauline567" };
         string[] utilisateur_mot_pass = new string[3] { "2004", "2005", "2006" };
 
         while (!idendifiant_valide)
@@ -23,7 +23,7 @@ class Client
                 if (nom_utilisateur == utilisateur[i])
                 {
                     idendifiant_valide = true;
-                    nom = utilisateur[i];
+                    //nom = utilisateur[i];
 
 
 

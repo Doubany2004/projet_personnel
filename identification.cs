@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Net;
 
 class Identification
 {
   
     
-        public static void Identifiant()
+        public static void Identifiant(string nom)
     {
         Console.ForegroundColor = ConsoleColor.Blue;
         
@@ -39,14 +40,15 @@ class Identification
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Bienvenu dans le profil client\n");
                     Console.ResetColor();
-                    Client.Client_profil();
+                    Client.Client_profil(nom);
+                    Service.Service_disponible(nom);
                     return;
                    
                 case "2":
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Bienvenu dans le profil professionnel\n");
                     Console.ResetColor();
-                    Professionnel.Professionnel_profil();
+                    Professionnel.Professionnel_profil(nom);
                     return;
 
                 case "3":
